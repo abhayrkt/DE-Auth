@@ -9,13 +9,6 @@ extern "C" {
 }
 #include "src/ArduinoJson-v5.13.5/ArduinoJson.h"
 
-/*
-   Here is a collection of useful functions and variables.
-   They are used globally via an 'extern' reference in every class.
-   Making everything static will lead to problems with the Arduino ESP8266 2.0.0 SDK,
-   there were some fixed in later version but we need to use the old version for injecting deauth packets.
- */
-
 uint8_t broadcast[6] = { 0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF };
 uint8_t wifi_channel = 1;
 
